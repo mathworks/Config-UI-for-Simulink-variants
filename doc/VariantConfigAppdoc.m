@@ -36,6 +36,11 @@
 %% 
 % <<noUIvariant.png>>
 %
+%% Update UI
+%
+% * In case the number or content of Simulink variant subsystem changes,
+% the update button allows you to refresh the UI
+% * The size and position of the UI are kept
 %% Additional information
 %
 % * If variant control mode is set to 'Expression' for a certain variant
