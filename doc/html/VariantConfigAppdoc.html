@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>UI based management for Simulink variants</title><meta name="generator" content="MATLAB 9.8"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-07-20"><meta name="DC.source" content="VariantConfigAppdoc.m"><style type="text/css">
+      --><title>Configuration UI for Simulink variant subsystems</title><meta name="generator" content="MATLAB 9.8"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-07-20"><meta name="DC.source" content="VariantConfigAppdoc.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -67,15 +67,15 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1>UI based management for Simulink variants</h1><!--introduction--><p>This example shows a way to specify variant configurations for Simulink models containing variant subsytems via an User Interface (UI). Simulink variant subsystem elements are listed in popup menus.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">User Interface</a></li><li><a href="#5">Ignore variants</a></li><li><a href="#7">Additional information</a></li><li><a href="#8">Further examples</a></li></ul></div><h2 id="1">User Interface</h2><p>To open the UI for a model:</p><pre class="language-matlab">variantConfigUI(<span class="string">'vehicleVariantsLabel'</span>);
+  </style></head><body><div class="content"><h1>Configuration UI for Simulink variant subsystems</h1><!--introduction--><p>This example shows a way to specify variant configurations for Simulink models containing variant subsytems via a User Interface (UI). Simulink variant subsystem elements are listed in popup menus.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">User Interface</a></li><li><a href="#5">Ignore variants</a></li><li><a href="#7">Additional information</a></li><li><a href="#8">Further examples</a></li></ul></div><h2 id="1">User Interface</h2><p>To open the UI for a model:</p><pre class="language-matlab">variantConfigUI(<span class="string">'vehicleVariantsLabel'</span>);
 </pre><p>The MATLAB Code  searches for all variant subsystems in the model and uses set_param to change 'VariantControlModel' and 'LabelModeActiveChoice'. Adding new variants also changes UI size. Changing a pop up menu's value immediately changes the active variant in the Simulink model.</p><p><b>Screenshot of model with UI</b></p><p><img vspace="5" hspace="5" src="App.png" alt=""> </p><h2 id="5">Ignore variants</h2><p>To ignore certain variants for the UI, specify Tag 'noUIvariant' in the variant subsystem block properties</p><p><b>Screenshot of variant subsystem properties</b></p><p><img vspace="5" hspace="5" src="noUIvariant.png" alt=""> </p><h2 id="7">Additional information</h2><div><ul><li>If variant control mode is set to 'Expression' for a certain variant subsystem, it will be changed to 'Label' during the initial UI startup. A warning is shown in the Command Window.</li><li>The shipped example requires Simscape license</li><li>The UI lists variant Subsystems, that are located under a mask. If the active variant is selected via a mask initialization command, the generated popup menu does not have any affect</li></ul></div><h2 id="8">Further examples</h2><pre class="language-matlab">variantConfigUI(<span class="string">'sldemo_variant_subsystems_enum'</span>);
 variantConfigUI(<span class="string">'sldemo_variant_subsystems'</span>);
 variantConfigUI(<span class="string">'sdl_vehicle_4wd_testbed'</span>); <span class="comment">% requires Simscape Driveline</span>
 </pre><p class="footer">Copyright 2020 The MathWorks, Inc.<br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2020a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
-%% UI based management for Simulink variants
+%% Configuration UI for Simulink variant subsystems
 % 
-% This example shows a way to specify variant configurations for Simulink models containing variant subsytems via an User Interface (UI). 
+% This example shows a way to specify variant configurations for Simulink models containing variant subsytems via a User Interface (UI). 
 % Simulink variant subsystem elements are listed in popup menus.
 % 
 %

@@ -1,6 +1,6 @@
-%% UI based management for Simulink variants
+%% Configuration UI for Simulink variant subsystems
 % 
-% This example shows a way to specify variant configurations for Simulink models containing variant subsytems via an User Interface (UI). 
+% This example shows a way to specify variant configurations for Simulink models containing variant subsytems via a User Interface (UI). 
 % Simulink variant subsystem elements are listed in popup menus.
 % 
 %
