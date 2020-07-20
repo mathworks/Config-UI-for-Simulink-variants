@@ -1,3 +1,5 @@
+[![View Config-UI-for-Simulink-variants on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/78432-config-ui-for-simulink-variants)
+
 # Configuration UI for Simulink variants
 Copyright 2020 The MathWorks, Inc.
 
